@@ -55,10 +55,10 @@
 - MPU-6050 (Gyroscope + Accelerometer)
 - HC-SR04 Ultrasonic Sensor
 - E18-D80NK Infrared Sensor
-- OLED Display
+- LCD Display
 - Heart Rate Sensor
 - แบตเตอรี่และวงจรจ่ายไฟ
-- ลำโพงและไฟฉาย
+
 
 ### ซอฟต์แวร์
 - Arduino IDE
