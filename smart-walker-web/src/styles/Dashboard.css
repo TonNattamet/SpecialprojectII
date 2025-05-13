@@ -1,0 +1,158 @@
+/* Dashboard container styles */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  flex-direction: column;
+}
+
+/* Grid layout for cards */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 640px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, auto);
+  }
+}
+
+
+
+
+/* Card styles */
+.dashboard-card {
+  padding: 1.25rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon styles */
+.dashboard-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 9999px;
+}
+
+.heart-rate-card .dashboard-icon {
+  background-color: #fef2f2;
+  color: #f87171;
+}
+
+.distance-card .dashboard-icon {
+  background-color: #F09CFF;
+  color: #882c98;
+}
+
+.steps-card .dashboard-icon {
+  background-color: #eff6ff;
+  color: #38bdf8;
+}
+
+/* Stats text styling */
+.dashboard-card h2 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+.dashboard-card h3 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-right: auto; 
+  color: #131517;
+}
+.dashboard-card button {
+  font-size: 1.00rem;
+  font-weight: 600;
+  margin-right: auto;
+  color: #131517;
+}
+
+.dashboard-time {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-right: auto; 
+  color: #7f848c;
+}
+
+.dashboard-card p {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+
+.dashboard-card .status-label {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 9999px;
+  background-color: #f3f4f6;
+  color: #4d5a5a;
+}
+
+.heart-rate-card .status-label {
+  background-color: #fef2f2;
+  color: #000000;
+}
+
+.distance-card .status-label {
+  background-color: #F4B8FF;
+  color: #000000;
+}
+
+.steps-card .status-label {
+  background-color: #D0FBFF;
+  color: #000000;
+}
+
+/* Pie chart legend styles */
+.pie-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+}
+
+.pie-legend .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pie-legend .legend-item span {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4b5563;
+  margin-right: 5px;
+}
+
+.pie-legend .legend-item .circle {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+}
+
+.dashboard-unit {
+  font-weight: 600;
+  color: #6B7280; 
+  font-size: 1rem;
+}

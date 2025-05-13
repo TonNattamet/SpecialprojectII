@@ -1,0 +1,32 @@
+.modal-enter {
+    opacity: 0;
+    transform: translateY(-20px); /* เริ่มต้นจากด้านบน */
+  }
+  
+  .modal-enter-active {
+    opacity: 1;
+    transform: translateY(0); /* เลื่อนลงมาเป็นตำแหน่งปกติ */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* ทำให้การเปลี่ยนแปลงนุ่มนวล */
+  }
+  
+  .modal-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .modal-exit-active {
+    opacity: 0;
+    transform: translateY(-20px); /* เลื่อนกลับขึ้นไปข้างบน */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* เพิ่มการ transition ให้ปุ่ม */
+  .transition-button {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .transition-button:hover {
+    transform: scale(1.1); /* ขยายปุ่มเล็กน้อยตอน hover */
+    color: black;
+  }
+  
